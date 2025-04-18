@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Vision</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #000;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header img {
+      max-width: 200px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    header p {
+      color: #fdd835;
+      font-size: 1rem;
+    }
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #fdd835;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .categoria {
+      margin-bottom: 3rem;
+    }
+    .categoria h2 {
+      color: #00bcd4;
+      margin-bottom: 1rem;
+    }
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .produto {
+      background-color: #1e1e1e;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .produto img {
+      width: 100%;
+      max-height: 150px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      background-color: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="World Vision Logo" />
+    <h1>WORLD VISION</h1>
+    <p>CONECTE, IMPRIMA, CRIE SEM LIMITES!</p>
+  </header>
+  <nav>
+    <a href="#banners">Banners</a>
+    <a href="#panfletos">Panfletos</a>
+    <a href="#cartoes">Cartões de Visita</a>
+    <a href="#canecas">Canecas Personalizadas</a>
+    <a href="#eletronicos">Eletrônicos</a>
+  </nav>
+
+  <section class="categoria" id="banners">
+    <h2>Banners</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://via.placeholder.com/200x150" alt="Banner exemplo">
+        <p>Banner Promocional</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="categoria" id="panfletos">
+    <h2>Panfletos</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://via.placeholder.com/200x150" alt="Panfleto exemplo">
+        <p>Panfleto A5 Frente e Verso</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="categoria" id="cartoes">
+    <h2>Cartões de Visita</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://via.placeholder.com/200x150" alt="Cartão exemplo">
+        <p>Cartão Fosco 4x4</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="categoria" id="canecas">
+    <h2>Canecas Personalizadas</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://via.placeholder.com/200x150" alt="Caneca exemplo">
+        <p>Caneca com Nome/Arte</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="categoria" id="eletronicos">
+    <h2>Eletrônicos</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://via.placeholder.com/200x150" alt="Eletrônico exemplo">
+        <p>Fone Bluetooth X1</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 World Vision. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
