@@ -1,157 +1,206 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>World Vision</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>World Vision - Gráfica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
     }
     body {
-      background-color: #111;
-      color: #fff;
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0f0f0f;
+      color: white;
     }
     header {
-      background-color: #000;
-      padding: 2rem 1rem;
+      background-color: #1c1c1c;
+      padding: 20px;
       text-align: center;
     }
     header img {
-      max-width: 200px;
-      margin-bottom: 1rem;
-    }
-    header h1 {
-      font-size: 2rem;
-    }
-    header p {
-      color: #fdd835;
-      font-size: 1rem;
+      width: 150px;
+      margin-bottom: 10px;
     }
     nav {
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1rem;
+      text-align: center;
+      margin-top: 10px;
     }
     nav a {
-      color: #fff;
+      color: #ffffff;
+      margin: 0 15px;
       text-decoration: none;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1400x500/000000/00ffcc?text=World+Vision+-+Design+Gr%C3%A1fico') no-repeat center center;
+      background-size: cover;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5em;
       font-weight: bold;
-    }
-    nav a:hover {
-      color: #fdd835;
-    }
-    section {
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .categoria {
-      margin-bottom: 3rem;
-    }
-    .categoria h2 {
-      color: #00bcd4;
-      margin-bottom: 1rem;
+      color: #00ffcc;
+      text-shadow: 2px 2px 4px black;
+      text-align: center;
+      padding: 0 20px;
     }
     .produtos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-    .produto {
-      background-color: #1e1e1e;
-      padding: 1rem;
-      border-radius: 8px;
+      padding: 50px 20px;
+      background-color: #121212;
       text-align: center;
     }
-    .produto img {
+    .produtos h2 {
+      color: #ff00cc;
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
+    .produto-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .produto-item {
+      background: #1c1c1c;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #00ffcc44;
+      width: 280px;
+    }
+    .produto-item img {
       width: 100%;
-      max-height: 150px;
-      object-fit: cover;
-      border-radius: 4px;
-      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .produto-item p {
+      margin: 10px;
+    }
+    .sobre {
+      padding: 60px 20px;
+      background-color: #1a1a1a;
+      text-align: center;
+    }
+    .sobre h2 {
+      color: #00ffcc;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .sobre p {
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+    }
+    .portfolio {
+      padding: 60px 20px;
+      background-color: #121212;
+      text-align: center;
+    }
+    .portfolio h2 {
+      color: #ff00cc;
+      margin-bottom: 40px;
+    }
+    .portfolio img {
+      max-width: 100%;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffcc44;
+      height: auto;
     }
     footer {
-      background-color: #000;
-      color: #aaa;
+      background-color: #1c1c1c;
+      padding: 20px;
       text-align: center;
-      padding: 1rem;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    .zap-link {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00ffcc;
+      color: #000;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00ffcc;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        font-size: 1.5em;
+        height: auto;
+        padding: 80px 20px;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .produto-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .produto-item {
+        width: 90%;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="World Vision Logo" />
-    <h1>WORLD VISION</h1>
-    <p>CONECTE, IMPRIMA, CRIE SEM LIMITES!</p>
+    <img src="https://via.placeholder.com/150x50/00ffcc/000000?text=World+Vision+Logo" alt="World Vision Logo">
+    <nav>
+      <a href="#">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="https://wa.me/5521992206260" target="_blank">Fale Conosco</a>
+    </nav>
   </header>
-  <nav>
-    <a href="#banners">Banners</a>
-    <a href="#panfletos">Panfletos</a>
-    <a href="#cartoes">Cartões de Visita</a>
-    <a href="#canecas">Canecas Personalizadas</a>
-    <a href="#eletronicos">Eletrônicos</a>
-  </nav>
 
-  <section class="categoria" id="banners">
-    <h2>Banners</h2>
-    <div class="produtos">
-      <div class="produto">
-        <img src="https://via.placeholder.com/200x150" alt="Banner exemplo">
-        <p>Banner Promocional</p>
+  <section class="hero">
+    Sua solução gráfica com visão de futuro
+  </section>
+
+  <section id="produtos" class="produtos">
+    <h2>Produtos</h2>
+    <div class="produto-container">
+      <div class="produto-item">
+        <img src="https://via.placeholder.com/250x350/0f0f0f/00ffcc?text=Creative+Banner" alt="Banner">
+        <p>Banner Personalizado</p>
+      </div>
+      <div class="produto-item">
+        <img src="https://via.placeholder.com/250x350/0f0f0f/00ffcc?text=Creative+Panfleto" alt="Panfleto">
+        <p>Panfleto Promocional</p>
+      </div>
+      <div class="produto-item">
+        <img src="https://via.placeholder.com/250x350/0f0f0f/00ffcc?text=Cart%C3%A3o+de+Visita" alt="Cartão de Visita">
+        <p>Cartão de Visita</p>
       </div>
     </div>
   </section>
 
-  <section class="categoria" id="panfletos">
-    <h2>Panfletos</h2>
-    <div class="produtos">
-      <div class="produto">
-        <img src="https://via.placeholder.com/200x150" alt="Panfleto exemplo">
-        <p>Panfleto A5 Frente e Verso</p>
-      </div>
-    </div>
+  <section id="sobre" class="sobre">
+    <h2>Sobre a World Vision</h2>
+    <p>
+      A World Vision é uma gráfica moderna e inovadora situada no coração do Rio de Janeiro, na Rua Pacheco Jordão, 6B - Higienópolis. Unimos tecnologia e criatividade para transformar ideias em materiais gráficos de alto impacto. Nossa missão é dar vida à sua marca com qualidade, elegância e uma pitada de ousadia visual.
+    </p>
   </section>
 
-  <section class="categoria" id="cartoes">
-    <h2>Cartões de Visita</h2>
-    <div class="produtos">
-      <div class="produto">
-        <img src="https://via.placeholder.com/200x150" alt="Cartão exemplo">
-        <p>Cartão Fosco 4x4</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="categoria" id="canecas">
-    <h2>Canecas Personalizadas</h2>
-    <div class="produtos">
-      <div class="produto">
-        <img src="https://via.placeholder.com/200x150" alt="Caneca exemplo">
-        <p>Caneca com Nome/Arte</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="categoria" id="eletronicos">
-    <h2>Eletrônicos</h2>
-    <div class="produtos">
-      <div class="produto">
-        <img src="https://via.placeholder.com/200x150" alt="Eletrônico exemplo">
-        <p>Fone Bluetooth X1</p>
-      </div>
-    </div>
+  <section class="portfolio">
+    <h2>Portfólio</h2>
+    <img src="https://via.placeholder.com/300x200/0f0f0f/00ffcc?text=Trabalho+01" alt="Trabalho 1">
+    <img src="https://via.placeholder.com/300x200/0f0f0f/00ffcc?text=Trabalho+02" alt="Trabalho 2">
+    <img src="https://via.placeholder.com/300x200/0f0f0f/00ffcc?text=Trabalho+03" alt="Trabalho 3">
   </section>
 
   <footer>
-    <p>&copy; 2025 World Vision. Todos os direitos reservados.</p>
+    Rua Pacheco Jordão, 6B - Higienópolis, Rio de Janeiro | Contato: (21) 99220-6260<br>
+    © 2025 World Vision. Todos os direitos reservados.
   </footer>
+
+  <a href="https://wa.me/5521992206260" class="zap-link" target="_blank">💬 Fale no WhatsApp</a>
 </body>
 </html>
